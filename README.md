@@ -8,7 +8,9 @@
 
 经过我这个渣渣3天的努力，终于写出了一个极其不完善的插件来实现文章发布或更新后推送到QQ及微信。
 
-[title]三种推送的优缺点：[/title]
+https://www.imut.xyz/522/
+
+# 三种推送的优缺点：
 
 1. mirai框架机器人 
   - 优点：机器人由自己掌控，自由度较高，拓展性强，可以实现图片，语音等同步发送
@@ -21,7 +23,7 @@
   - 优点：参数较少，上手容易，稳定性强，正文支持MD语法
   - 缺点：仅支持微信一对一推送
 
-[title]本插件优缺点[/title]
+# 本插件优缺点
 
 - 优点：聚合了三种机器人的所有功能，QQ单独推送，群推送，微信一对一推送
 - 缺点：很多很多，前期非常不完善，也是希望以后能够逐步完善的，目前已知 
@@ -30,7 +32,7 @@
   3. mirai机器人由于会话有超时，每次投稿时，都会进行一遍会话校验和验证
   4. 推送正文修改较为麻烦，看不懂代码可能不会改
 
-[title]部分代码原理[/title]
+# 部分代码原理
 
 现阶段[v0.3.0]本代码有5个文件组成，目录结构如下
 
@@ -67,7 +69,7 @@ $mirai_postdata = json_encode(array('sessionKey'=>$mirai_push_session,'target'=>
 $mirai_postdata = json_encode(array('sessionKey'=>$mirai_push_session,'target'=>$mirai_push_id,'messageChain'=>array(0=>array('type'=>'Plain','text'=>$text),1=>array('type'=>'Image','url'=>$mirai_push_image),2=>array('type'=>'AtAll'))));
 ```
 
-[title]未来展望[/title]
+# 未来展望
 
 虽说是未来展望，但作为一名专业为德语，没有系统学习过编程的渣渣来说，可能还是有些困难的，能不能实现就看我能不能坚持下去了
 
@@ -75,7 +77,7 @@ $mirai_postdata = json_encode(array('sessionKey'=>$mirai_push_session,'target'=>
 - 增加基于“[mirai-api-http](https://github.com/project-mirai/mirai-api-http)”的mirai机器人控制台（这个项目本来就是优先考虑mirai机器人，其他的俩都是副产物）
 - 实现文章评论推送功能
 
-[title]更新记录[/title]
+# 更新记录
 
 - 2020-10-8 
   - ver 0.3.0 把所有可修改参数全部整理到config.php，增加对congfig.php内容的解释 

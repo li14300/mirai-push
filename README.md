@@ -1,4 +1,4 @@
-# mirai-pushi
+# mirai-push
 
 ![](https://www.imut.xyz/wp-content/uploads/2020/10/mirai-push-1024x597.jpg)
 

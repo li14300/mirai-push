@@ -66,5 +66,3 @@ function mirai_catch_that_image($post_id) {
 	}
 	return $first_img;
 }
-
-?>

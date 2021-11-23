@@ -32,5 +32,3 @@ function mirai_push_add_link($actions,$plugin_file) {
 	}
 return $actions;
 }
-
-?>

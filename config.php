@@ -23,7 +23,5 @@ $serverkey = '<serverexamplekey>';
 $mirai_text_length = 100;
 
 // 以下参数无需手动填写
-$mirai_auth_url = $mirai_main_url.'//auth';
-$mirai_verify_url = $mirai_main_url.'//verify';
-
-?>
+$mirai_auth_url = $mirai_main_url.'/verify';
+$mirai_verify_url = $mirai_main_url.'/bind';

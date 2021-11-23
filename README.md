@@ -34,7 +34,7 @@ https://www.imut.xyz/522/
 
 # 部分代码原理
 
-现阶段[v0.3.0]本代码有5个文件组成，目录结构如下
+现阶段[v0.4.0]本代码有5个文件组成，目录结构如下
 
 ```markup
 mirai-push
@@ -79,9 +79,11 @@ $mirai_postdata = json_encode(array('sessionKey'=>$mirai_push_session,'target'=>
 
 # 更新记录
 
+- 2021-11-23 
+  - ver 0.4.0 支持最新的mirai-api-http v2，2.x以后版本的可以正常使用了
+      - 已知BUG，文章内图片路径有中文时，mirai会推送失败，预计下一版本修复
 - 2020-10-8 
   - ver 0.3.0 把所有可修改参数全部整理到config.php，增加对congfig.php内容的解释 
-      - 已知BUG，文章内图片路径有中文时，mirai会推送失败，预计下一版本修复
   - ver 0.2.2 增加Server酱推送
 - 2020-10-7 
   - ver 0.2.1 mirai机器人定时认证 未能实现，改为每次文章发布时运行一次，第一个可以连续运行的版本

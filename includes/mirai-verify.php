@@ -14,7 +14,7 @@ mirai会话开始-认证-校验
 
 // mirai会话开始-认证-获取session
 // 组合POST数据
-    $mirai_auth_data = json_encode(array('authKey'=>$miraikey));
+    $mirai_auth_data = json_encode(array('verifyKey'=>$miraikey));
     $mirai_auth_opts = array('http'=>array('method'=>'POST','header'=>'Content-type: application/json','content'=>$mirai_auth_data));
     $mirai_auth_context = stream_context_create($mirai_auth_opts);
 // 发送对mirai酱的POST请求
@@ -28,5 +28,3 @@ mirai会话开始-认证-校验
     $mirai_verify_context = stream_context_create($mirai_verify_opts);
 // 发送对mirai酱的POST请求
     $mirai_verify_return = file_get_contents($mirai_verify_url, false, $mirai_verify_context);
-
-?>
